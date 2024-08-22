@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
 }
 
 .overlay {
@@ -49,6 +49,39 @@ main {
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   transition: right 0.3s ease-in-out;
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 200px;
+}
+
+.link-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.link-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-left: 1rem;
+}
+
+.display {
+  display: flex;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease-in-out;
 }
 
 .sidebar.show {
