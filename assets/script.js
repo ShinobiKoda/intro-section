@@ -1,7 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".sidebar");
 const overlay = document.querySelector(".overlay");
-const link_title = document.querySelectorAll(".link-title");
+const link_title = document.querySelectorAll(".link-heading");
 const arrow_img = document.querySelectorAll(".arrow-img");
 
 hamburger.addEventListener("click", () => {
