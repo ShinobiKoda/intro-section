@@ -256,17 +256,33 @@ a:hover {
     justify-content: space-between;
     padding: 2rem 1.5rem;
     position: relative;
+    color: var(--medium-gray);
   }
 
   .desktop-link-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .desktop-nav-links {
+    font-weight: 500;
+    font-size: 1.1rem;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+  }
+
+  .desktop-link-heading:hover,
+  .desktop-sub-links span:hover,
+  .desktop-sub-links div:hover {
+    cursor: pointer;
+    color: var(--almost-black);
+  }
+
+  .desktop-link-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
   }
 
   .desktop-sub-links {
@@ -290,11 +306,16 @@ a:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    /* align-items: center; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-end; /* Aligns items at the bottom */
   }
 
   .hero-info {
+    display: flex; /* Ensure this is flex container */
     flex-direction: column;
+    justify-content: space-between;
     gap: 5rem;
   }
 
@@ -305,6 +326,7 @@ a:hover {
     padding: 0 1rem;
     gap: 1.5rem;
     width: 30rem;
+    flex-grow: 1; /* Allows hero text to take up available space */
   }
 
   .hero-info p,
@@ -329,8 +351,45 @@ a:hover {
   }
 
   .hero-sponsors {
-    align-self: flex-end;
-    justify-self: flex-end;
+    display: flex;
+    align-items: flex-end; /* Align sponsors to the bottom of hero-info */
+    gap: 1rem;
+  }
+
+  .hero-sponsors img {
+    width: 6rem;
+  }
+
+  .desktop-nav-btns {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .login-btn-desktop,
+  .register-btn-desktop {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--medium-gray);
+
+    font-size: 1.1rem;
+  }
+
+  .login-btn-desktop:hover {
+    color: var(--almost-black);
+  }
+
+  .register-btn-desktop {
+    border: 2px solid var(--medium-gray);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .register-btn-desktop:hover {
+    border: 2px solid var(--almost-black);
+    color: var(--almost-black);
   }
 
   .display {
